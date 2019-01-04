@@ -27,44 +27,44 @@ except ImportError:
 #import pyimgflip
 
 botStart = time.time()
-cl= LINE("EzM8dAuLvNiIk4Dfefk0.qNJ2cjxeqOeUh1f5Q070Ka.vspXKIZD25ghuFFqkGlORORTCi2lFfwMlcBCGxycotM=")
+cl= LINE("EAUOVvY7Ikh4RPkFX5Ea.a6dzd0TpLsSRAJiksGPbgG.ncfNGqNb/XZjSE/p21jGViFVzoucQCYgIUR5xd6EeR0=")
 cl.log("Auth Token : " + str(cl.authToken))
 
-ki = LINE("EzMttSzNrRl6KNfMxOe7.e0eeO4v+zed/X6BzU33p1W.rLsLSkJY1HFVAAD9be6/BppebL4RsQGPrL6BuCk1XJE=")
+ki = LINE("EASNrxbPSntbSakjuwl1.S8onZtw5zv5UJn6lN/BB4q.ZgiT4RAcye2OFrLZhEOf0VMHmsUWPe7a4Pc2MZAajnQ=")
 ki.log("Auth Token : " + str(ki.authToken))
 
-kk = LINE("EzIL7uMmgVob26inC503.TLXNogrRFptK2nNaSi0XaW.tb0/whZBXAE7k07DXgIKRd5qu81SRy1n+r8WN2x+rTc=")
-kk.log("Auth Token : " + str(kk.authToken))
+#kk = LINE("EzIL7uMmgVob26inC503.TLXNogrRFptK2nNaSi0XaW.tb0/whZBXAE7k07DXgIKRd5qu81SRy1n+r8WN2x+rTc=")
+#kk.log("Auth Token : " + str(kk.authToken))
 
-kc = LINE("EziQBnYf7cWY7gnjyd1b.QqGAYjAKLvR5VWikgL5ooW.ZoGehiOBTtuhpDDolLuO4BMndxkwEV1M5qMZwg92/Rw=")
-kc.log("Auth Token : " + str(kc.authToken))
+#kc = LINE("EziQBnYf7cWY7gnjyd1b.QqGAYjAKLvR5VWikgL5ooW.ZoGehiOBTtuhpDDolLuO4BMndxkwEV1M5qMZwg92/Rw=")
+#kc.log("Auth Token : " + str(kc.authToken))
 
-km = LINE("EzsiqctP7YVYPW1NE7c3.A3M293vsj72GliSGNxsOWW.dI12MyGGpC77kVSiiMwXB89Nzt+qpva8kElRbwcEwUg=")
-km.log("Auth Token : " + str(km.authToken))
+#km = LINE("EzsiqctP7YVYPW1NE7c3.A3M293vsj72GliSGNxsOWW.dI12MyGGpC77kVSiiMwXB89Nzt+qpva8kElRbwcEwUg=")
+#km.log("Auth Token : " + str(km.authToken))
 
-kb = LINE("EzPTOTjrwuncuE6M0jNd.oC+yTlv7qZ7EVydQW/g/Bq.fzHLGS9aS+LGRP0ds6irlC6ms7IKAkHq/dz2UYUsN5k=")
-kb.log("Auth Token : " + str(kb.authToken))
+#kb = LINE("EzPTOTjrwuncuE6M0jNd.oC+yTlv7qZ7EVydQW/g/Bq.fzHLGS9aS+LGRP0ds6irlC6ms7IKAkHq/dz2UYUsN5k=")
+#kb.log("Auth Token : " + str(kb.authToken))
 
-sw = LINE("Ez9MrHqqJJM8s19VG5o4.AU737SO6W+NBa/k31Nbfja.R5pMQlzpMXS24Nv57iPJYIVY9mCCJqeweIOr8iLUspk")
+sw = LINE("EAZVaowWBg0nSDWlL9T0.3Ue5K3qM3D42m7t4fN5kma.UrvoumhCUyI+TWc6QkOQS4PRqSGRl5ItYZaEfcybQVE=")
 sw.log("Auth Token : " + str(sw.authToken))
 
 oepoll = OEPoll(cl)
 call = cl
-creator = ["u4278f60895c442812e1f5179ab4ef490"]
-owner = ["u4278f60895c442812e1f5179ab4ef490"]
-admin = ["u4278f60895c442812e1f5179ab4ef490"]
-staff = ["u4278f60895c442812e1f5179ab4ef490"]
+creator = ["u03a0d90f4b4f952b2b6a320a4a0a411a"]
+owner = ["u03a0d90f4b4f952b2b6a320a4a0a411a"]
+admin = ["u03a0d90f4b4f952b2b6a320a4a0a411a"]
+staff = ["u03a0d90f4b4f952b2b6a320a4a0a411a"]
 lineProfile = cl.getProfile()
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
-Bmid = kk.getProfile().mid
-Cmid = kc.getProfile().mid
-Dmid = km.getProfile().mid
-Emid = kb.getProfile().mid
+#Bmid = kk.getProfile().mid
+#Cmid = kc.getProfile().mid
+#Dmid = km.getProfile().mid
+#Emid = kb.getProfile().mid
 Zmid = sw.getProfile().mid
-KAC = [cl,ki,kk,kc]
-ABC = [ki,kk,kc,km,kb]
-Bots = [mid,Amid,Bmid,Cmid,Dmid,Emid,Zmid]
+KAC = [cl,ki]
+ABC = [ki]
+Bots = [mid,Amid,Zmid]
 Saints = admin + owner + staff
 Team = creator + owner + admin + staff + Bots
 Setbot = codecs.open("setting.json","r","utf-8")
@@ -89,10 +89,10 @@ warmode = []
 ghost = []
 
 responsename1 = ki.getProfile().displayName
-responsename2 = kk.getProfile().displayName
-responsename3 = kc.getProfile().displayName
-responsename4 = km.getProfile().displayName
-responsename5 = kb.getProfile().displayName
+#responsename2 = kk.getProfile().displayName
+#responsename3 = kc.getProfile().displayName
+#responsename4 = km.getProfile().displayName
+#responsename5 = kb.getProfile().displayName
 
 
 settings = {
@@ -756,7 +756,7 @@ def helpbot():
     helpMessage2 += "╔═⍟ᴛᴇᴀᴍ ʙᴏᴛ ᴘʀᴏᴛᴇᴄᴛ⍟══\n"
     helpMessage2 += "║" + " [ᴄᴏᴍᴍᴀɴᴅ ᴋɪᴄᴋᴇʀ]─\n"
     helpMessage2 += "║" + " ──────────\n"
-    helpMessage2 += "║☯➸ %i. " % num + key + "Vc @\n"
+    helpMessage2 += "║☯➸ %i. " % num + key + "Hi @\n"
     num = (num+1)
     helpMessage2 += "║☯➸ %i. " % num + key + "Halo @ \n"
     num = (num+1)
@@ -3626,7 +3626,7 @@ def bot(op):
                                        except:
                                            pass
                                            
-                        elif ("Vc " in msg.text):
+                        elif ("Hi " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                key = eval(msg.contentMetadata["MENTION"])
